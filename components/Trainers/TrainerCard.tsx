@@ -41,7 +41,8 @@ const TrainerCard: React.FC<TrainerCardProps> = ({ trainer }) => {
           className="transition-transform duration-500 group-hover:scale-110 border-2 border-yellow-500 rounded-lg"
         />
         <div className="absolute bottom-0 w-full p-4">
-          <h3 className="text-2xl font-bold mb-2 text-center text-yellow-600">{trainer.name}</h3>
+          <div></div>
+          <h3 className="bg-black bg-opacity-50 rounded-full p-2 text-3xl font-bold mb-2 text-center text-yellow-600">{trainer.name}</h3>
           <div className="flex flex-wrap gap-4 justify-center">
             {trainer.certifications.map((cert, index) => (
                 //apply a random gradient to each certification

@@ -35,6 +35,12 @@ const sectionsData = [
     heading: 'Advanced Equipment Training',
     text: 'Get hands-on with the latest in fitness technology for a cutting-edge exercise experience.',
   },
+  
+  {
+    img: '/assets/gym6.jpg',
+    heading: 'Powerlifiting/CrossFit Equipment',
+    text: 'Discover top-tier Powerlifting and CrossFit equipment, designed to elevate your workout experience and performance.',
+  },
   // ...add as many sections as you like
 ];
 

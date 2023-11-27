@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer id='footer' className="bg-black pt-10 pb-10"> {/* Increased top and bottom padding */}
       <div className="mx-auto w-full max-w-screen-xl px-4">
-        <div className="md:flex md:justify-between">
+        <div className="md:flex md:justify-between mb-16">
           <div className="mb-6 md:mb-0">
             <a href="https://r1pfitness.com/" className="flex items-center">
               <img
@@ -20,77 +20,77 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div className="mt-8"> {/* Added margin-top */}
-            <h2 className="text-lg font-bold text-white mb-4">Subscribe to our Newsletter</h2>
+          <div className="mb-6 md:mb-0"> {/* Added marg in-top */}
+            <h2 className="text-3xl font-bold text-white mb-4">Subscribe to our Newsletter</h2>
             <form className="flex">
-              <input type="email" placeholder="Your Email" className="p-2 rounded-full border-2 border-gold-500"/> {/* More rounded and golden border */}
-              <button type="submit" className="bg-white text-black p-2 rounded-r-lg ml-2">Subscribe</button>
+              <input type="email" placeholder="Your Email" className="py-2 px-10 rounded-full border-2 border-yellow-500" /> {/* More rounded and golden border */}
+              <button type="submit" className=" text-white p-2 font-bold rounded-full px-4 ml-2 bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800  hover:bg-yellow-300 transition duration-300 cursor-pointer">Subscribe</button>
             </form>
           </div>
         </div>
 
         {/* Rest of the existing content */}
-
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mt-8">
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
-              Resources
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="https://flowbite.com/" className="hover:underline">
-                  R1P Fitness
-                </a>
-              </li>
-              <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
-                  Careers
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
-              Follow us
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a
-                  href="https://github.com/themesberg/flowbite"
-                  className="hover:underline "
-                >
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
-                  Book a tour
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
-              Legal
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Terms & Conditions
-                </a>
-              </li>
-            </ul>
+        <div className='mb-24 w-full'>
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mt-8 mb-8">
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+                Resources
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="https://flowbite.com/" className="hover:underline">
+                    R1P Fitness
+                  </a>
+                </li>
+                <li>
+                  <a href="https://tailwindcss.com/" className="hover:underline">
+                    Careers
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+                Follow us
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a
+                    href="https://github.com/themesberg/flowbite"
+                    className="hover:underline "
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/4eeurUVvTy"
+                    className="hover:underline"
+                  >
+                    Book a tour
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+                Legal
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:underline">
+                    Terms & Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
         <div className="sm:flex sm:items-center sm:justify-between">
