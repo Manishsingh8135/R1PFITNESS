@@ -25,7 +25,7 @@ const Home: React.FC = () => {
 
       <NewPriceSection />
 
-      <TrainersPage />  
+      {/* <TrainersPage />   */}
       <FaqSection />
 
     </div>
