@@ -35,7 +35,7 @@ const TrainerCard: React.FC<TrainerCardProps> = ({ trainer }) => {
         src={trainer.image}
         alt={trainer.name}
         layout="responsive"
-        width={500} // Adjusted for larger display
+        width={700} // Adjusted for larger display
         height={900} // Adjusted for larger display
         objectFit="cover"
         className="transition-transform duration-500 group-hover:scale-110 border-2 border-yellow-500 rounded-lg"

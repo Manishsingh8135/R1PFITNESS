@@ -69,7 +69,7 @@ const faqs = [
 const FaqSection = () => {
   return (
     <div id='faq' className="bg-black p-8">
-      <h2 className=" text-7xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">FREQUENTLY ASKED QUESTIONS</h2>
+      <h2 className=" text-6xl   lg:text-8xl   font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">FREQUENTLY ASKED QUESTIONS</h2>
       <div className="grid md:grid-cols-2 gap-4">
         {faqs.map((faq, index) => (
           <FaqItem key={index} question={faq.question} answer={faq.answer} />

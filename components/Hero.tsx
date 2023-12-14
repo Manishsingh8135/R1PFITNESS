@@ -1,11 +1,11 @@
 "use client"
 import { motion, useAnimation } from 'framer-motion';
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+
 const HeroSection: React.FC = () => {
   const controls = useAnimation();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const maxScroll = window.innerHeight;
@@ -31,36 +31,36 @@ const HeroSection: React.FC = () => {
 
       {/* Gradient Overlay */}
       <div className="absolute w-full h-full bg-gradient-to-t from-black to-transparent"></div>
-      <div className='flex flex-col'>
-      <motion.div
-        className="z-10 text-transparent text-8xl md:text-8xl font-extrabold"
-        initial={{ opacity: 1, y: 0 }}
-        animate={controls}
-        style={{
-          backgroundImage: 'linear-gradient(45deg, #d6cdcd, #8c8888)',
-          backgroundClip: 'text',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent'
-        }}
-      >
-        R1PFITNESS     GYM
-      </motion.div>
+      <div className='flex flex-col items-center'>
+        <motion.div
+          className="z-10 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-transparent"
+          initial={{ opacity: 1, y: 0 }}
+          animate={controls}
+          style={{
+            backgroundImage: 'linear-gradient(45deg, #d6cdcd, #8c8888)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
+          }}
+        >
+          R1PFITNESS GYM
+        </motion.div>
 
-      <div className='text-center mt-4'>
-      <motion.div
-        className="z-10 text-transparent text-2xl md:text-xl font-extrabold"
-        initial={{ opacity: 1, y: 0 }}
-        animate={controls}
-        style={{
-          backgroundImage: 'linear-gradient(45deg, #d6cdcd, #8c8888)',
-          backgroundClip: 'text',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent'
-        }}
-      >
-        Home away from Home
-      </motion.div>
-      </div>
+        <div className='text-center mt-4'>
+          <motion.div
+            className="z-10 text-xl sm:text-xl md:text-lg lg:text-2xl font-extrabold text-transparent"
+            initial={{ opacity: 1, y: 0 }}
+            animate={controls}
+            style={{
+              backgroundImage: 'linear-gradient(45deg, #d6cdcd, #8c8888)',
+              backgroundClip: 'text',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}
+          >
+            Home away from Home
+          </motion.div>
+        </div>
       </div>
     </div>
   );

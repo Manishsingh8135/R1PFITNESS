@@ -27,7 +27,7 @@ const AnimatedHeadingSection = () => {
     return (
         <div className="h-screen flex flex-col justify-start pt-10 items-center bg-black">
             <motion.div 
-                className="text-8xl mb-16 font-bold bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800"
+                className="text-6xl   lg:text-8xl text-center mb-16 font-bold bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800"
                 style={{
                     WebkitBackgroundClip: 'text',
                     backgroundClip: 'text',
