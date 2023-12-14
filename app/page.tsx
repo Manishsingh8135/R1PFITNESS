@@ -18,16 +18,10 @@ const Home: React.FC = () => {
 
 
       <HeroSection />
-      <AnimatedHeadingSection />
-      {/* <FeaturesSection/> */}
-
-
-
+      <AnimatedHeadingSection /> 
       <MainComponent />
       <NewPriceSection />
-      <TrainersPage />
-      <ImageGallery/>
-      
+      <TrainersPage />  
       <FaqSection />
 
     </div>
