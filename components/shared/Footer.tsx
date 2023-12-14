@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Newsletter Section */}
           <div className="mb-6 md:mb-0"> {/* Added marg in-top */}
             <h2 className="text-3xl font-bold text-center my-4 mb-6 text-white ">Subscribe to our Newsletter</h2>
-            <form className="flex">
+            <form className="flex mx-auto ml-6">
               <input type="email" placeholder="Your Email" className="py-2 px-10 rounded-full border-2 border-yellow-500" /> {/* More rounded and golden border */}
               <button type="submit" className=" text-white p-2 font-bold rounded-full px-4 ml-2 bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800  hover:bg-yellow-300 transition duration-300 cursor-pointer">Subscribe</button>
             </form>
@@ -31,7 +31,7 @@ const Footer = () => {
 
         {/* Rest of the existing content */}
         <div className='mb-24 w-full'>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mt-8 mb-8">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mt-8 mb-8 mx-auto ml-6">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
                 Resources
