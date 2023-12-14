@@ -66,7 +66,7 @@ export interface Certification {
       specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
       description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
       experience: 25,
-      image: '/assets/trainer6a.png',
+      image: '/assets/trainer6a.jpg',
       contactInfo: {
         email: 'taiwan840@gmail.com'
       },
@@ -90,7 +90,7 @@ export interface Certification {
       specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
       description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
       experience: 25,
-      image: '/assets/trainerw4a.png',
+      image: '/assets/trainerw4a.jpg',
       contactInfo: {
         email: 'taiwan840@gmail.com'
       },
@@ -117,7 +117,7 @@ export interface Certification {
       specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
       description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
       experience: 25,
-      image: '/assets/trainer5a.png',
+      image: '/assets/trainer5a.jpg',
       contactInfo: {
         email: 'taiwan840@gmail.com'
       },
@@ -125,44 +125,8 @@ export interface Certification {
       favoriteExercise: 'Squats'
     },
     
-    {
-      id: 'trainer-001',
-      name: 'Taiwan Robinson',
-      certifications: [
-        { name: 'ISSA Certification', certified: true },
-        { name: 'Nutrition Certified', certified: true },
-        { name: 'Youth/Elderly Certified', certified: true },
-        { name: 'TRX Certified', certified: true }
-      ],
-      specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
-      description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
-      experience: 25,
-      image: '/assets/trainerw2.jpg',
-      contactInfo: {
-        email: 'taiwan840@gmail.com'
-      },
-      favoriteWorkoutDay: 'Leg day',
-      favoriteExercise: 'Squats'
-    },
-    {
-      id: 'trainer-001',
-      name: 'Taiwan Robinson',
-      certifications: [
-        { name: 'ISSA Certification', certified: true },
-        { name: 'Nutrition Certified', certified: true },
-        { name: 'Youth/Elderly Certified', certified: true },
-        { name: 'TRX Certified', certified: true }
-      ],
-      specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
-      description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
-      experience: 25,
-      image: '/assets/gym5.jpg',
-      contactInfo: {
-        email: 'taiwan840@gmail.com'
-      },
-      favoriteWorkoutDay: 'Leg day',
-      favoriteExercise: 'Squats'
-    },
+    
+    
     // ... Add other trainers here
   ];
   

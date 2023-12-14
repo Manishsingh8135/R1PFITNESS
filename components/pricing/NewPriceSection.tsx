@@ -3,7 +3,7 @@
 export default function NewPriceSection() {
     return (
         <>
-            <section className="bg-white dark:bg-black">
+            <section className="bg-black">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
                         <h2 className="mb-4 text-7xl tracking-tight font-extrabold bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
@@ -15,7 +15,7 @@ export default function NewPriceSection() {
                     </div>
                     <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                         {/* Pricing Card */}
-                        <div className="flex flex-col p-6 mx-auto max-w-lg text-center hover:font-bold hover:cursor-pointer text-white bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gradient-to-bl from-orange-700 via-red-500 to-yellow-600
+                        <div className="flex flex-col font-semibold p-6 mx-auto max-w-lg text-center hover:font-bold hover:cursor-pointer text-white rounded-lg border  shadow border-gray-600 xl:p-8 bg-gradient-to-bl from-orange-700 via-red-500 to-yellow-600
 ">
                             <h3 className="mb-4 text-2xl  rounded-full bg-gradient-to-bl from-orange-700 via-red-500 to-yellow-600
 
@@ -125,7 +125,7 @@ export default function NewPriceSection() {
                             </a>
                         </div>
                         {/* Pricing Card */}
-                        <div className="flex flex-col p-6 mx-auto max-w-lg text-center hover:cursor-pointer text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gradient-to-bl from-gray-300 via-gray-400 to-gray-200
+                        <div className="flex flex-col font-semibold p-6 mx-auto max-w-lg text-center hover:cursor-pointer text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gradient-to-bl from-gray-300 via-gray-400 to-gray-200
  dark:text-white">
                             <h3 className="mb-4 text-2xl font-bold bg-gradient-to-bl from-gray-300 via-gray-400 to-gray-200
  rounded-full py-2">Week Pass</h3>
@@ -134,7 +134,7 @@ export default function NewPriceSection() {
                             </p>
                             <div className="flex justify-center items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold">$75</span>
-                                <span className="text-gray-500 dark:text-gray-400">/week</span>
+                                <span className="text-gray-500 dark:text-white">/week</span>
                             </div>
                             {/* List */}
                             <ul role="list" className="mb-8 space-y-4 text-left">
@@ -235,14 +235,14 @@ export default function NewPriceSection() {
                             </a>
                         </div>
                         {/* Pricing Card */}
-                        <div className="flex flex-col p-6 mx-auto max-w-lg text-center hover:cursor-pointer text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark: dark:text-white dark:bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
+                        <div className="flex flex-col font-semibold p-6 mx-auto max-w-lg text-center hover:cursor-pointer text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark: dark:text-white dark:bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
                             <h3 className="mb-4 text-2xl font-bold py-2 rounded-full bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">Month Pass</h3>
                             <p className="font-light text-gray-500 sm:text-lg dark:text-white">
                                 Commit to Your Goals: Maximize your fitness with our month pass.
                             </p>
                             <div className="flex justify-center items-baseline my-8">
                                 <span className="mr-2 text-5xl font-extrabold">$150</span>
-                                <span className="text-gray-500 dark:text-gray-400">/month</span>
+                                <span className="text-gray-500 dark:text-white">/month</span>
                             </div>
                             {/* List */}
                             <ul role="list" className="mb-8 space-y-4 text-left">

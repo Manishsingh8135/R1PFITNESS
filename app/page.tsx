@@ -9,6 +9,7 @@ import TrainersPage from '@/components/Trainers/trainers';
 import TrainerProfilePage from '@/components/Trainers/OneTrainer';
 import AnimatedHeadingSection from '@/components/textSection/textContainer';
 import ImageGallery from '@/components/gallery/ImageGallery';
+import BMICalculator from '@/components/bmi/BMICalculator';
 
 // import CustomSwiper from '@/components/CoverflowSection';
 
@@ -29,7 +30,8 @@ const Home: React.FC = () => {
       <NewPriceSection />
       <TrainersPage />
       <ImageGallery/>
-  
+      {/* <GComponent/> */}
+      <BMICalculator/>
       <FaqSection />
 
     </div>

@@ -13,6 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        golden: '#FFD700',
+        yellow: '#FFEA00',
+        bronze: '#CD7F32',
+      },
+      boxShadow: {
+        'golden-yellow': '0 35px 60px -15px rgba(199, 147, 41, 0.5)',
+      },
     },
   },
   plugins: [require('flowbite/plugin')],
