@@ -18,9 +18,13 @@ const Home: React.FC = () => {
 
 
       <HeroSection />
+
       <AnimatedHeadingSection /> 
+
       <MainComponent />
+
       <NewPriceSection />
+
       <TrainersPage />  
       <FaqSection />
 

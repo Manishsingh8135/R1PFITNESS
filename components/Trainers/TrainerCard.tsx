@@ -29,32 +29,31 @@ interface TrainerCardProps {
 }
 
 const TrainerCard: React.FC<TrainerCardProps> = ({ trainer }) => {
-    return (
-      <div className="relative overflow-hidden rounded-lg group shadow-lg shadow-yellow-500 bg-gray-800 text-white  mx-auto my-16 h-700 ">
-        <Image
-          src={trainer.image}
-          alt={trainer.name}
-          layout="responsive"
-          width={500} // Maintain the aspect ratio of the card
-          height={700}
-          objectFit="cover"
-          className="transition-transform duration-500 group-hover:scale-110 border-2 border-yellow-500 rounded-lg"
-        />
-        <div className="absolute bottom-0 w-full p-4">
-          <div></div>
-          <h3 className="bg-black bg-opacity-50 rounded-full p-2 text-3xl font-bold mb-2 text-center text-yellow-600">{trainer.name}</h3>
-          <div className="flex flex-wrap gap-4 justify-center">
-            {trainer.certifications.map((cert, index) => (
-                //apply a random gradient to each certification
-
-              <span key={index} className={`${getRandomGradient()}bg-white text-white text-m font-semibold  py-1 px-2 rounded-full`}>
-                {cert.name}
-              </span>
-            ))}
-          </div>
+  return (
+    <div className="relative overflow-hidden rounded-lg group shadow-lg bg-gray-800 text-white mx-auto my-4 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-2xl 2xl:max-w-3xl">
+      <Image
+        src={trainer.image}
+        alt={trainer.name}
+        layout="responsive"
+        width={500} // Adjusted for larger display
+        height={900} // Adjusted for larger display
+        objectFit="cover"
+        className="transition-transform duration-500 group-hover:scale-110 border-2 border-yellow-500 rounded-lg"
+      />
+      <div className="absolute bottom-0 w-full p-4">
+        <h3 className="bg-black bg-opacity-50 rounded-full p-2 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 text-center text-yellow-600">{trainer.name}</h3>
+        <div className="flex flex-wrap gap-2 justify-center">
+          {trainer.certifications.map((cert, index) => (
+            <span key={index} className={`${getRandomGradient()} text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold py-1 px-2 rounded-full`}>
+              {cert.name}
+            </span>
+          ))}
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
+
+
   
   export default TrainerCard;

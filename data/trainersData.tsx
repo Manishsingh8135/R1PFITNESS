@@ -102,15 +102,12 @@ export interface Certification {
       name: 'Bishop Watkins',
       certifications: [
         { name: 'Sports Conditioning', certified: true },
-        { name: 'Bodybuilding Competition Prep', certified: true },
-        { name: 'Lifestyle Coach', certified: true },
         { name: 'Military Physical Training (PT) Leader', certified: true },
         { name: 'NASM Certified Personal Trainer (CPT)', certified: true },
         { name: 'First Aid and CPR certified', certified: true },
         { name: 'Kettlebell Instructor Level 3', certified: true },
         { name: 'Hawaiian Physique Bodybuilding Champion- 2019 & 2020', certified: true },
-        { name: '', certified: true },
-        { name: '', certified: true },
+       
         { name: 'Military Training', certified: true },
         
       ],
