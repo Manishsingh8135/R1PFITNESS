@@ -36,9 +36,8 @@ export interface Certification {
         { name: 'Military Service', certified: true },
         { name: 'All American Athlete', certified: true },
         { name: 'Holistic Fitness Training', certified: true },
-        { name: 'Motivational Coach', certified: true },
         { name: 'Military-Style Physical Training', certified: true },
-        { name: 'Customized Workout Programs', certified: true }
+     
       ],
       specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
       description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
@@ -59,7 +58,7 @@ export interface Certification {
         { name: 'Military Service', certified: true },
         { name: 'Nutrition Certified', certified: true },
         { name: 'Physique Competitor', certified: true },
-        { name: 'Personal Training Guru', certified: true },
+       
         { name: 'Certified Personal Trainer', certified: true },
         { name: 'TRX Certified', certified: true }
       ],
@@ -101,14 +100,12 @@ export interface Certification {
       id: 'trainer-001',
       name: 'Bishop Watkins',
       certifications: [
-        { name: 'Sports Conditioning', certified: true },
         { name: 'Military Physical Training (PT) Leader', certified: true },
         { name: 'NASM Certified Personal Trainer (CPT)', certified: true },
-        { name: 'First Aid and CPR certified', certified: true },
-        { name: 'Kettlebell Instructor Level 3', certified: true },
+    
         { name: 'Hawaiian Physique Bodybuilding Champion- 2019 & 2020', certified: true },
        
-        { name: 'Military Training', certified: true },
+        
         
       ],
       specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
