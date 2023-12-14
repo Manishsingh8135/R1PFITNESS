@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute w-full h-full bg-gradient-to-t from-black to-transparent"></div>
       <div className='flex flex-col items-center'>
         <motion.div
-          className="z-10 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-transparent"
+          className="z-10 text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold text-transparent p-4"
           initial={{ opacity: 1, y: 0 }}
           animate={controls}
           style={{
