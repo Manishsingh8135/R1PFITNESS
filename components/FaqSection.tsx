@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     question: 'What are the gym opening hours?',
-    answer: 'Our gym is open from 5 am to 11 pm on weekdays and 7 am to 9 pm on weekends.',
+    answer: 'Our gym is open from 6 am to 11 pm on Monday to Friday, 7 am to 4 pm on Saturdays and 7 am to 2 pm on Sundays.',
   },
   {
     question: 'Do I need to be a member to access the gym?',
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: 'Are there any age restrictions to join the gym?',
-    answer: 'Members must be 16 years or older. Those under 18 require parental consent.',
+    answer: 'Members must be 14 years or older. Those under 18 require parental consent.',
   },
   {
     question: 'Do you have locker rooms and showers?',
@@ -41,13 +41,10 @@ const faqs = [
     question: 'Is there a cafe or a protein shake bar at the gym?',
     answer: 'Yes, our in-house cafe serves a variety of healthy snacks and protein shakes.',
   },
+ 
   {
-    question: 'Do you have a swimming pool?',
-    answer: 'We have a 25-meter indoor swimming pool available for lap swimming, aqua classes, and free swim periods.',
-  },
-  {
-    question: 'Are there discounts for students or seniors?',
-    answer: 'We offer discounted rates for both students and seniors. Please provide a valid ID for the discount.',
+    question: 'Are there discounts for seniors , students and military members?',
+    answer: 'We offer discounted rates for  students, seniors, military members and first responders. Please provide a valid ID for the discount.',
   },
   {
     question: 'Can I bring a guest to the gym?',
