@@ -6,6 +6,7 @@ import NewPriceSection from '@/components/pricing/NewPriceSection';
 import TrainersPage from '@/components/Trainers/trainers';
 
 import AnimatedHeadingSection from '@/components/textSection/textContainer';
+import OfferingsSection from '@/components/featuresSection/OfferingSection';
 
 
 // import CustomSwiper from '@/components/CoverflowSection';
@@ -26,6 +27,7 @@ const Home: React.FC = () => {
       <NewPriceSection />
 
       <TrainersPage />  
+      <OfferingsSection/>
       <FaqSection />
 
     </div>

@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl px-4">
         <div className="md:flex md:justify-between mb-16">
           <div className="mb-6 md:mb-0">
-            <a href="https://r1pfitness.com/" className="flex items-center">
+            <a href="https://r1pfitness.com/" className="md:flex justify-center grid grid-cols-1 align-middle gap-4">
               <img
                 src="/assets/riplogo1.png"
-                className="h-16 mr-3"
+                className="h-16 mx-auto"
                 alt="R1PFITNESS GYM Logo"
               />
-              <span className="self-center text-3xl font-bold whitespace-nowrap text-white">
+              <span className="self-center text-3xl font-bold whitespace-nowrap   mx-auto  bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
                 R1PFITNESS GYM
               </span>
             </a>
@@ -23,8 +23,8 @@ const Footer = () => {
           <div className="mb-6 md:mb-0"> {/* Added marg in-top */}
             <h2 className="text-3xl font-bold text-center my-4 mb-6 text-white ">Join Our Community!</h2>
             <form className="flex flex-col mx-auto ml-6">
-              <input type="email" placeholder="Your Email" className="py-2 px-10 rounded-full border-2 border-yellow-500" /> {/* More rounded and golden border */}
-              <button type="submit" className=" text-white mt-4 p-2 font-bold rounded-full px-4 ml-2 bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800  hover:bg-yellow-300 transition duration-300 cursor-pointer">Subscribe</button>
+              <input type="email" placeholder="Your Email" className="py-4 px-10 mx-4 rounded-full border-2 border-yellow-500" /> {/* More rounded and golden border */}
+              <button type="submit" className=" text-white mt-4 p-2 py-4 font-bold rounded-full px-4 mx-4 bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800  hover:bg-yellow-300 transition duration-300 cursor-pointer">Subscribe</button>
             </form>
           </div>
         </div>

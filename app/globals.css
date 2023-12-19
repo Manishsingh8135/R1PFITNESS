@@ -134,3 +134,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Example of responsive design */
+@media (min-width: 768px) {
+  .responsive-padding {
+      padding: 2rem;
+  }
+}
