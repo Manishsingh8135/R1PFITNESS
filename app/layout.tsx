@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'R1p Fitness',
   description: 'Keep Moving',
+  icons: {
+    icon: '/assets/riplogo1.png'
+  }
 }
 
 export default function RootLayout({
