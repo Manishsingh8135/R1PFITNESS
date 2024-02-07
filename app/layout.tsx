@@ -24,14 +24,14 @@ export default function RootLayout({
    
     <html lang="en" suppressHydrationWarning>
         <head />
-        <body className='overflow-x-hidden'>
+        <body className='overflow-x-hidden bg-black'>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar/>
+            {/* <Navbar/> */}
             {children}
             <Footer/>
           </ThemeProvider>

@@ -25,12 +25,12 @@ const offerings: Offering[] = [
 const OfferingsSection = () => {
     return (
         <div className="bg-black p-4 text-white">
-            <h2 className="text-6xl md:text-8xl  font-bold text-center mb-12 md:mb-16 bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">What We Offer</h2>
+            <h2 className="text-6xl md:text-8xl  font-bold text-center mb-12 md:mb-16 bg-clip-text text-maincolor">What We Offer</h2>
             <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-8">
                 {offerings.map((offering) => (
-                    <div key={offering.id} className="p-4 text-center bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800 text-white rounded-full">
+                    <div key={offering.id} className="p-4 text-center bg-b-gradient text-white rounded-full">
                         <h3 className="text-2xl md:text-3xl font-bold">{offering.title}</h3>
-                        <p className="text-m mb:text-lg  ">{offering.description}</p>
+                       {/* <p className="text-m mb:text-lg  ">{offering.description}</p> */}
                     </div>
                 ))}
             </div>

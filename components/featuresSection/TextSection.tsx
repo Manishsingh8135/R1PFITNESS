@@ -26,7 +26,7 @@ const TextSection: React.FC<TextSectionProps> = ({ heading, text }) => {
   return (
     <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center text-center p-4">
       <motion.h1
-        className="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800"
+        className="text-4xl md:text-6xl font-extrabold text-maincolor"
         initial="hidden"
         animate={controls}
         variants={variants}
@@ -42,7 +42,7 @@ const TextSection: React.FC<TextSectionProps> = ({ heading, text }) => {
         variants={variants}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        {text}
+        
       </motion.p>
     </div>
   );

@@ -41,6 +41,26 @@ const sectionsData = [
     heading: 'Powerlifiting/CrossFit Equipment',
     text: 'Discover top-tier Powerlifting and CrossFit equipment, designed to elevate your workout experience and performance.',
   },
+  {
+    img: '/assets/gymopenarea.jpg',
+    heading: 'Versatile Fitness Arena',
+    text: 'Experience freedom in our expansive indoor area, perfect for a diverse range of workouts and fitness regimes.',
+  },
+  {
+    img: '/assets/gymopenarea2.jpg',
+    heading: 'R1pfitness Lounge: Unwind in Comfort',
+    text: 'Retreat to our R1pfitness Lounge, a serene space with cozy sofas and soothing music, ideal for relaxation post-workout.',
+  },
+  // {
+  //   img: '/assets/coffee.jpg',
+  //   heading: 'Energize at Our Coffee Bar',
+  //   text: 'Refuel and relax at our on-site coffee bar, serving a variety of rejuvenating beverages for your post-workout refreshment.',
+  // },
+  // {
+  //   img: '/assets/gymstore.jpg',
+  //   heading: 'R1pfitness Emporium: Shop the Fitness Revolution',
+  //   text: 'Dive into R1pfitness Emporium for an exclusive selection of fitness gear and apparel, crafted for peak performance and style.',
+  // },
   // ...add as many sections as you like
 ];
 

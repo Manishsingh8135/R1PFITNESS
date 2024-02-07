@@ -1,5 +1,7 @@
 // components/Footer.tsx
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { MdEmail, MdPhone } from 'react-icons/md';
+
 
 const Footer = () => {
   return (
@@ -13,7 +15,7 @@ const Footer = () => {
                 className="h-16 mx-auto"
                 alt="R1PFITNESS GYM Logo"
               />
-              <span className="self-center text-3xl font-bold whitespace-nowrap   mx-auto  bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
+              <span className="self-center text-3xl font-bold whitespace-nowrap   mx-auto  bg-clip-text text-maincolor">
                 R1PFITNESS GYM
               </span>
             </a>
@@ -23,8 +25,8 @@ const Footer = () => {
           <div className="mb-6 md:mb-0"> {/* Added marg in-top */}
             <h2 className="text-3xl font-bold text-center my-4 mb-6 text-white ">Join Our Community!</h2>
             <form className="flex flex-col mx-auto ml-6">
-              <input type="email" placeholder="Your Email" className="py-4 px-10 mx-4 rounded-full border-2 border-yellow-500" /> {/* More rounded and golden border */}
-              <button type="submit" className=" text-white mt-4 p-2 py-4 font-bold rounded-full px-4 mx-4 bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800  hover:bg-yellow-300 transition duration-300 cursor-pointer">Subscribe</button>
+              <input type="email" placeholder="Your Email" className="py-4 px-10 mx-4 rounded-full border-2 border-maincolor" /> {/* More rounded and golden border */}
+              <button type="submit" className=" text-white mt-4 p-2 py-4 font-bold rounded-full px-4 mx-4 bg-b-gradient  hover:bg-yellow-300 transition duration-300 cursor-pointer">Subscribe</button>
             </form>
           </div>
         </div>
@@ -51,27 +53,20 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
-                Follow us
+                Contact Us
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
-                  >
-                    Contact Us
-                  </a>
+                <li className="mb-4 flex items-center">
+                  <MdEmail className="mr-2" /> {/* Email icon */}
+                  <span>r1pfitnesspr@gmail.com</span>
                 </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    Book a tour
-                  </a>
+                <li className="flex items-center">
+                  <MdPhone className="mr-2" /> {/* Phone icon */}
+                  <span>+1 (808) 208-1066</span>
                 </li>
               </ul>
             </div>
+
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
                 Legal
@@ -99,7 +94,7 @@ const Footer = () => {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a
-              href="#"
+              href="https://www.facebook.com/R1PFITNESS/"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <FaFacebook className="w-6 h-6" />
@@ -113,18 +108,18 @@ const Footer = () => {
               <span className="sr-only">Twitter page</span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/r1pfitness/?hl=en"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <FaInstagram className="w-6 h-6" />
               <span className="sr-only">Instagram page</span>
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/channel/UCOyBqar6fShlIJ6oRLGuUag"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
-              <FaLinkedin className="w-6 h-6" />
-              <span className="sr-only">LinkedIn page</span>
+              <FaYoutube className="w-6 h-6" />
+              <span className="sr-only">Youtube </span>
             </a>
           </div>
         </div>

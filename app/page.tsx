@@ -1,12 +1,20 @@
-import HeroSection from '@/components/Hero';
+import HeroSection from '@/components/hero/Hero';
 
-import FaqSection from '@/components/FaqSection';
+import FaqSection from '@/components/faq/FaqSection';
 import MainComponent from '@/components/featuresSection/MainComponent';
 import NewPriceSection from '@/components/pricing/NewPriceSection';
 import TrainersPage from '@/components/Trainers/trainers';
 
-import AnimatedHeadingSection from '@/components/textSection/textContainer';
 import OfferingsSection from '@/components/featuresSection/OfferingSection';
+//import MyPage from '@/components/textSection/MyPage';
+import R1pFitnessComponent from '@/components/textSection/Detail';
+import { ParallaxScrollSecondDemo } from '@/components/ImageSection/ParallaxComponent';
+import { InfiniteMovingCardsDemo } from '@/components/Testimonial/Testimonial';
+import { TextGenerateEffectDemo } from '@/components/textSection/TextGenerateEffect';
+import { NavbarDemo } from '@/components/Navbar/NavbarDemo';
+import { StickyScrollRevealDemo } from '@/components/stickyScroll/StickyScroll';
+import  SVGMaskEffectDemo  from '@/components/svgmask/SVGMaskDemo';
+import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect';
 
 
 // import CustomSwiper from '@/components/CoverflowSection';
@@ -14,21 +22,31 @@ import OfferingsSection from '@/components/featuresSection/OfferingSection';
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-black  min-h-screen text-white">
+    <div id= 'Home' className="bg-black  min-h-screen text-white">
 
-
+      <NavbarDemo/>
 
       <HeroSection />
 
-      <AnimatedHeadingSection /> 
-
+      {/* <AnimatedHeadingSection />  */}
+      {/* <MyPage/> */}
+      {/* <TextGenerateEffectDemo/> */}
+      <R1pFitnessComponent/>
       <MainComponent />
 
       <NewPriceSection />
 
       <TrainersPage />  
+      <div className='mt-48'>
+      <ParallaxScrollSecondDemo/>
+      </div>
+      
+      <InfiniteMovingCardsDemo/>
+      
       <OfferingsSection/>
+      {/* <StickyScrollRevealDemo/> */}
       <FaqSection />
+      <TypewriterEffectDemo/>
 
     </div>
   );

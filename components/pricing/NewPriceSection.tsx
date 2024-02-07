@@ -6,10 +6,10 @@ export default function NewPriceSection() {
             <section className="bg-black">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                     <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-                        <h2 className="mb-4 text-7xl tracking-tight font-extrabold bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
+                        <h2 className="mb-4 text-7xl tracking-tight font-extrabold text-maincolor">
                             Designed for WINNERS like YOU!!
                         </h2>
-                        <p className="mb-5 font-bold bg-clip-text text-transparent bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800 sm:text-xl dark:white">
+                        <p className="mb-5 font-bold bg-clip-text text-maincolor sm:text-xl dark:white">
                             At R1p Fitness, we believe in affordable fitness for everyone. Check out our competitive pricing plans and start your journey to a healthier you today!
                         </p>
                     </div>
