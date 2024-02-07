@@ -10,10 +10,7 @@ import OfferingsSection from '@/components/featuresSection/OfferingSection';
 import R1pFitnessComponent from '@/components/textSection/Detail';
 import { ParallaxScrollSecondDemo } from '@/components/ImageSection/ParallaxComponent';
 import { InfiniteMovingCardsDemo } from '@/components/Testimonial/Testimonial';
-import { TextGenerateEffectDemo } from '@/components/textSection/TextGenerateEffect';
 import { NavbarDemo } from '@/components/Navbar/NavbarDemo';
-import { StickyScrollRevealDemo } from '@/components/stickyScroll/StickyScroll';
-import  SVGMaskEffectDemo  from '@/components/svgmask/SVGMaskDemo';
 import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect';
 
 
@@ -28,9 +25,6 @@ const Home: React.FC = () => {
 
       <HeroSection />
 
-      {/* <AnimatedHeadingSection />  */}
-      {/* <MyPage/> */}
-      {/* <TextGenerateEffectDemo/> */}
       <R1pFitnessComponent/>
       <MainComponent />
 
@@ -44,7 +38,6 @@ const Home: React.FC = () => {
       <InfiniteMovingCardsDemo/>
       
       <OfferingsSection/>
-      {/* <StickyScrollRevealDemo/> */}
       <FaqSection />
       <TypewriterEffectDemo/>
 

@@ -1,5 +1,4 @@
 "use client";
-import { MovingBorderDemo } from "../buttons/MovingBorder";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 
 export function TypewriterEffectDemo() {
