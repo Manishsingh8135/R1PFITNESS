@@ -13,7 +13,7 @@ import { InfiniteMovingCardsDemo } from '@/components/Testimonial/Testimonial';
 import { NavbarDemo } from '@/components/Navbar/NavbarDemo';
 import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect';
 import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
-import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
+//import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 
 //import GlofoxModal from '@/components/modal/Modal';
 
