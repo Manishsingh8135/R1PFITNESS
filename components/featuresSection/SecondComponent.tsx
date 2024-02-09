@@ -12,7 +12,7 @@ interface SecondComponentProps {
 }
 
 const SecondComponent: React.FC<SecondComponentProps> = ({ image, heading, text, reverse }) => {
-  const sectionClass = "flex flex-col md:flex-row h-screen w-full";
+  const sectionClass = "flex flex-col md:flex-row md:h-screen w-full";
 
   return (
     <motion.div

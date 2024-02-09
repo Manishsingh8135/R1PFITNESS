@@ -5,7 +5,7 @@ import { MdEmail, MdPhone } from 'react-icons/md';
 
 const Footer = () => {
   return (
-    <footer id='footer' className="bg-black pt-10 pb-10"> {/* Increased top and bottom padding */}
+    <footer id='footer' className="bg-black pt-10 pb-10 overflow-x-hidden "> {/* Increased top and bottom padding */}
       <div className="mx-auto w-full max-w-screen-xl px-4">
         <div className="md:flex md:justify-between mb-16">
           <div className="mb-6 md:mb-0">

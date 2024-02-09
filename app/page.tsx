@@ -23,12 +23,12 @@ import GlofoxModal from '@/components/modal/Modal';
 
 const Home: React.FC = () => {
   return (
-    <div id= 'Home' className="bg-black  min-h-screen text-white">
+    <div id= 'Home' className="bg-black  min-h-screen text-white overflow-x-hidden">
 
       <NavbarDemo/>
 
       <HeroSection />
-      <ThreeDCardDemo/>
+      {/* <ThreeDCardDemo/> */}
       <R1pFitnessComponent/>
       <MainComponent />
 

@@ -24,7 +24,7 @@ const TextSection: React.FC<TextSectionProps> = ({ heading, text }) => {
   };
 
   return (
-    <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center text-center p-4">
+    <div className="w-full md:w-1/2  h-24 md:h-full flex flex-col justify-center items-center text-center p-4">
       <motion.h1
         className="text-4xl md:text-6xl font-extrabold text-maincolor"
         initial="hidden"

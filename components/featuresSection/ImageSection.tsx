@@ -1,35 +1,28 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface ImageSectionProps {
   image: string;
 }
 
-const imageVariants = {
-  hover: {
-    y: -20,
-    boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.5)",
-  }
-};
-
 const ImageSection: React.FC<ImageSectionProps> = ({ image }) => {
   return (
-    <div className="relative w-full md:w-1/2 h-screen flex justify-center items-center p-8 shadow-lg shadow-yellow-500/50 ">
+    <div className="relative w-full md:w-1/2 flex justify-center items-center p-2 shadow-lg shadow-yellow-500/50">
       {/* Background elements */}
       <div className='absolute z-0 w-full md:h-[700px]'>
-        
+        {/* Background content */}
       </div>
-      
+
       {/* Image Container */}
-      <div className='relative z-10 md:h-[700px] '> {/* Ensure this div has a higher z-index than elements you want behind */}
-        <motion.img
+      <div className='relative z-10 h-[500px] md:h-[700px]'> {/* Ensure this div has a higher z-index than elements you want behind */}
+        <Image
           src={image}
           alt=""
-          className="object-cover rounded-lg w-full h-full border-2 border-maincolor"
-          variants={imageVariants}
-          whileHover="hover"
-          initial={{ y: 0, boxShadow: "0px 5px 20px rgba(0, 0, 0, 0.2)" }}
-          transition={{ yoyo: Infinity, duration: 2, ease: "easeInOut" }}
+          width={500} // Specify width for Next.js optimization
+          height={500} // Specify height for Next.js optimization
+          className="object-cover rounded-xl w-full h-full border-2 border-maincolor"
+          loading="lazy" // Enable lazy loading
+          quality={80} // Adjust image quality if needed
         />
       </div>
     </div>
