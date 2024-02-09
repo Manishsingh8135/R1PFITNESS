@@ -15,7 +15,7 @@ import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect'
 import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
 import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 
-import GlofoxModal from '@/components/modal/Modal';
+//import GlofoxModal from '@/components/modal/Modal';
 
 
 // import CustomSwiper from '@/components/CoverflowSection';
