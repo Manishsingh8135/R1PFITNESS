@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   return (
     <div id= 'Home' className="bg-black  min-h-screen text-white overflow-x-hidden">
 
-      <NavbarDemo/>
+      {/* <NavbarDemo/> */}
 
       <HeroSection />
       {/* <ThreeDCardDemo/> */}

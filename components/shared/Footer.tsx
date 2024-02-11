@@ -33,9 +33,9 @@ const Footer = () => {
 
         {/* Rest of the existing content */}
         <div className='mb-24 w-full'>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mt-8 mb-8 mx-auto ml-6">
+          <div className="flex  items-center flex-wrap justify-between gap-8 gap-y-12">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+              <h2 className="mb-6 text-sm font-semibold  uppercase text-white">
                 Resources
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -51,16 +51,16 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase text-white">
+            <div className='pr-4'>
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Contact Us
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4 flex items-center">
+                <li className="mb-4 flex items-start  mr-4">
                   <MdEmail className="mr-2" /> {/* Email icon */}
                   <span>r1pfitnesspr@gmail.com</span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center mr-2">
                   <MdPhone className="mr-2" /> {/* Phone icon */}
                   <span>+1 (808) 208-1066</span>
                 </li>
