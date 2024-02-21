@@ -22,7 +22,7 @@ function Navbar({ className }: { className?: string }) {
       <HoveredLink href='/'>Home</HoveredLink>
         <HoveredLink href='/trainers'>Trainers</HoveredLink>
         <HoveredLink href='/testimonials'>Testimonials</HoveredLink>
-        <HoveredLink href='/latest'>Latest</HoveredLink>
+        <HoveredLink href='/gallery'>Gallery</HoveredLink>
        
       
         {/* <MenuItem setActive={setActive} active={active} item="Trainers">

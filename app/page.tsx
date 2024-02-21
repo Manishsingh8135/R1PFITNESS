@@ -35,9 +35,9 @@ const Home: React.FC = () => {
       <NewPriceSection />
 
       <TrainersPage />  
-      <div className='mt-48'>
+      {/* <div className='mt-48'>
       <ParallaxScrollSecondDemo/>
-      </div>         
+      </div>          */}
       <OfferingsSection/>
       <FaqSection />
       <TypewriterEffectDemo/>
