@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import Footer from '@/components/shared/Footer'
+import { NavbarDemo } from "@/components/Navbar/NavbarDemo";
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -32,7 +33,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* <Navbar/> */}
+            <NavbarDemo/>
             {children}
             <SpeedInsights />
             <Analytics />

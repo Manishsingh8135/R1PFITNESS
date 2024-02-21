@@ -19,17 +19,18 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 ", className)}
     >
       <Menu setActive={setActive}>
-        <HoveredLink href='#Trainers'>Trainers</HoveredLink>
-        <MenuItem setActive={setActive} active={active} item="Home">
-
-        </MenuItem>
+      <HoveredLink href='/'>Home</HoveredLink>
+        <HoveredLink href='/trainers'>Trainers</HoveredLink>
+        <HoveredLink href='/testimonials'>Testimonials</HoveredLink>
+        <HoveredLink href='/latest'>Latest</HoveredLink>
+       
       
-        <MenuItem setActive={setActive} active={active} item="Trainers">
+        {/* <MenuItem setActive={setActive} active={active} item="Trainers">
 
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="FAQS">
 
-        </MenuItem>
+        </MenuItem> */}
         {/* <MenuItem setActive={setActive} active={active} item="Products">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
@@ -41,17 +42,17 @@ function Navbar({ className }: { className?: string }) {
           
           </div>
         </MenuItem> */}
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          {/* <div className="flex flex-col space-y-4 text-sm">
+        {/* <MenuItem setActive={setActive} active={active} item="Pricing">
+          <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/hobby">Year-Pass</HoveredLink>
             <HoveredLink href="/individual">Month-Pass</HoveredLink>
             <HoveredLink href="/team">Week-Pass</HoveredLink>
             <HoveredLink href="/enterprise">Day-Pass</HoveredLink>
-          </div> */}
+          </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Contact Us">
+        <MenuItem setActive={setActive} active={active} item="Contact Us"> */}
 
-        </MenuItem>
+        {/* </MenuItem> */}
       </Menu>
     </div>
   );

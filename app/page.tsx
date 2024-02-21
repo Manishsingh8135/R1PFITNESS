@@ -13,7 +13,7 @@ import { InfiniteMovingCardsDemo } from '@/components/Testimonial/Testimonial';
 import { NavbarDemo } from '@/components/Navbar/NavbarDemo';
 import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect';
 import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
-//import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
+import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 
 //import GlofoxModal from '@/components/modal/Modal';
 
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       {/* <NavbarDemo/> */}
 
       <HeroSection />
-      {/* <ThreeDCardDemo/> */}
+      <ThreeDCardDemo/>
       <R1pFitnessComponent/>
       <MainComponent />
 
@@ -37,10 +37,7 @@ const Home: React.FC = () => {
       <TrainersPage />  
       <div className='mt-48'>
       <ParallaxScrollSecondDemo/>
-      </div>
-      
-      <InfiniteMovingCardsDemo/>
-      
+      </div>         
       <OfferingsSection/>
       <FaqSection />
       <TypewriterEffectDemo/>
