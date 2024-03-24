@@ -40,13 +40,13 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
+                  <a href="https://www.r1pohana.net/" className="hover:underline">
                     R1P Fitness
                   </a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" className="hover:underline">
-                    Careers
+                  <a href="https://www.r1pfitness.com/" className="hover:underline">
+                    R1P Fitness Shop
                   </a>
                 </li>
               </ul>
