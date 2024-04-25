@@ -130,7 +130,7 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
     description: 'Jonathan specializes in strength & conditioning, bodybuilding, and weight loss.',
     experience: 25,
-    image: '/assets/trainer13.JPG'
+    image: '/assets/trainer14.JPG'
     ,
     contactInfo: {
       email: 'taiwan840@gmail.com'
