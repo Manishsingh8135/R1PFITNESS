@@ -40,7 +40,7 @@ const TrainerCard: React.FC<TrainerCardProps> = ({ trainer }) => {
         width={300} // Adjusted for larger display
         height={500} // Adjusted for larger display
         objectFit="cover"
-        className="transition-transform duration-500 group-hover:scale-110  rounded-lg lg:h-[750px]"
+        className="transition-transform duration-500 group-hover:scale-110  rounded-lg lg:h-[750px] "
       />
       <div className="absolute bottom-0 w-full p-4">
         <div className='flex justify-center'>
