@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 
 type Offering = {
     id: number;
@@ -21,63 +22,41 @@ const offerings: Offering[] = [
     { id: 12, title: "Positive Vibes & Energy", description: "A place where positivity and energy thrive." }
 ];
 
-
 const OfferingsSection = () => {
+    const [isVisible, setIsVisible] = useState(false); // State to toggle visibility
+
     return (
         <div className="bg-black p-4 text-white">
-            <h2 className="text-6xl md:text-8xl  font-bold text-center mb-12 md:mb-16 bg-clip-text text-maincolor">What We Offer</h2>
-            <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-8">
-                {offerings.map((offering) => (
-                    <div key={offering.id} className="p-4 text-center bg-b-gradient text-white rounded-full">
-                        <h3 className="text-2xl md:text-3xl font-bold">{offering.title}</h3>
-                       {/* <p className="text-m mb:text-lg  ">{offering.description}</p> */}
-                    </div>
-                ))}
+            <div className="text-center">
+                <h2 className="text-6xl md:text-8xl font-bold mb-4 md:mb-16 bg-clip-text text-maincolor">
+                    What We Offer
+                </h2>
+                <div className="inline-block">
+                    <svg
+                        onClick={() => setIsVisible(!isVisible)}
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 cursor-pointer mb-16 transition-transform duration-300"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        style={{ transform: isVisible ? 'rotate(180deg)' : 'rotate(0deg)' }}
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
             </div>
+            {isVisible && (
+                <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-8">
+                    {offerings.map((offering) => (
+                        <div key={offering.id} className="p-4 text-center bg-b-gradient text-white rounded-lg">
+                            <h3 className="text-2xl md:text-3xl font-bold">{offering.title}</h3>
+                            <p className="text-md md:text-lg">{offering.description}</p>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
 };
 
 export default OfferingsSection;
-
-
-
-
-// import React from 'react';
-
-// type Offering = {
-//     id: number;
-//     title: string;
-//     description: string;
-// };
-
-// const offerings: Offering[] = [
-//     { id: 1, title: "Yoga Classes", description: "Experience tranquility and strength..." },
-//     { id: 2, title: "Weight Training", description: "Build strength and endurance with our state-of-the-art equipment." },
-//     { id: 3, title: "Cardio Sessions", description: "Boost your heart health and stamina with our varied cardio routines." },
-//     { id: 4, title: "Personal Training", description: "Get personalized workouts tailored to your fitness goals." },
-//     { id: 5, title: "Nutrition Advice", description: "Professional nutrition advice to complement your training." },
-//     { id: 6, title: "Swimming Pool Access", description: "Enjoy and relax in our Olympic-sized swimming pool." },
-//     // Add more offerings here
-// ];
-
-// const OfferingsGridSection = () => {
-//     return (
-//         <div className="mx-4 my-8 p-4 rounded-lg bg-gradient-to-bl from-amber-700 via-yellow-300 to-yellow-800">
-//             <div className="grid gap-4 md:grid-cols-2">
-//                 {offerings.map((offering) => (
-//                     <div key={offering.id} className="flex items-start gap-2">
-//                         <span className="text-white text-2xl">✔️</span>
-//                         <div>
-//                             <h3 className="text-4xl font-bold">{offering.title}</h3>
-//                             <p className="font-bold">{offering.description}</p>
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default OfferingsGridSection;
-

@@ -1,7 +1,8 @@
+'use client'
+import { useState } from 'react';
 import FaqItem from './FaqItems';
 
 const faqs = [
-  
   {
     question: 'Where can I park?',
     answer: 'Parking is available in the lot adjacent to the gym as well as on the street. We also have bike racks for those who prefer to cycle here.',
@@ -42,10 +43,9 @@ const faqs = [
     question: 'Is there a cafe or a protein shake bar at the gym?',
     answer: 'Yes, our in-house cafe serves a variety of healthy snacks and protein shakes.',
   },
- 
   {
-    question: 'Are there discounts for seniors , students and military members?',
-    answer: 'We offer discounted rates for  students, seniors, military members and first responders. Please provide a valid ID for the discount.',
+    question: 'Are there discounts for seniors, students, and military members?',
+    answer: 'We offer discounted rates for students, seniors, military members, and first responders. Please provide a valid ID for the discount.',
   },
   {
     question: 'Can I bring a guest to the gym?',
@@ -61,18 +61,36 @@ const faqs = [
   },
 ];
 
-
-
-
 const FaqSection = () => {
+  const [isVisible, setIsVisible] = useState(false); // State to toggle visibility
+
   return (
-    <div id='faq' className="bg-black p-8 h-full">
-      <h2 className=" text-5xl   lg:text-8xl   font-bold mb-16  text-maincolor">FREQUENTLY ASKED QUESTIONS</h2>
-      <div className="grid md:grid-cols-2 gap-4">
-        {faqs.map((faq, index) => (
-          <FaqItem key={index} question={faq.question} answer={faq.answer} />
-        ))}
+    <div id='faq' className="bg-black p-8 ">
+      <div className="text-center">
+        <h2 className="text-5xl lg:text-8xl font-bold mb-4 text-maincolor">
+          FREQUENTLY ASKED QUESTIONS
+        </h2>
+        <div className="inline-block">
+        <svg
+          onClick={() => setIsVisible(!isVisible)}
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10 cursor-pointer mb-16 transition-transform duration-300"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          style={{ transform: isVisible ? 'rotate(180deg)' : 'rotate(0deg)' }}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+        </div>
       </div>
+      {isVisible && (
+        <div className="grid md:grid-cols-2 gap-4 mb-4">
+          {faqs.map((faq, index) => (
+            <FaqItem key={index} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
