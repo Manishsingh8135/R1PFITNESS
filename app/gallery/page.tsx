@@ -5,7 +5,7 @@ import { ParallaxScrollSecond } from "@/components/ui/parallax-scroll";
 export default function NewGallery(){
     return(
         <div className="h-screen flex flex-col items-center pt-32 gap-8">
-            <h1 className="text-7xl text-maincolor font-bold">R1PFITNESS GALLERY</h1>
+            <h1 className="text-4xl md:text-6xl text-maincolor font-bold text-center">R1PFITNESS GALLERY</h1>
             <div className="flex justify-center items-center ">
                 <ParallaxScrollSecondDemo/>
             </div>
