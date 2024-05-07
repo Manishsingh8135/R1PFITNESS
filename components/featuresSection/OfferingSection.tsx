@@ -28,7 +28,7 @@ const OfferingsSection = () => {
     return (
         <div className="bg-black p-4 text-white">
             <div className="text-center">
-                <h2 className="text-6xl md:text-8xl font-bold mb-4 md:mb-16 bg-clip-text text-maincolor">
+                <h2 className="text-4xl md:text-6xl font-bold mb-4 md:mb-16 bg-clip-text text-maincolor">
                     What We Offer
                 </h2>
                 <div className="inline-block">

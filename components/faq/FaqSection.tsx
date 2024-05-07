@@ -67,7 +67,7 @@ const FaqSection = () => {
   return (
     <div id='faq' className="bg-black p-8 ">
       <div className="text-center">
-        <h2 className="text-5xl lg:text-8xl font-bold mb-4 text-maincolor">
+        <h2 className="ttext-4xl md:text-6xl font-bold mb-4 text-maincolor">
           FREQUENTLY ASKED QUESTIONS
         </h2>
         <div className="inline-block">
