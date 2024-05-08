@@ -56,12 +56,7 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
       email: 'taiwan840@gmail.com'
     },
     socialMedia: {
-      facebook: 'https://www.netflix.com/search?q=poet',
-      instagram: 'https://www.netflix.com/search?q=poet',
-      youtube: 'https://www.netflix.com/search?q=poet',
-      linkedin: 'https://www.netflix.com/search?q=poet',
-      tiktok: 'https://www.netflix.com/search?q=poet',
-      twitter: 'https://www.netflix.com/search?q=poet'
+      instagram: 'https://www.instagram.com/hipo.r/',
     },
     favoriteWorkoutDay: 'Leg day',
     favoriteExercise: 'Squats'
@@ -85,6 +80,9 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     image: '/assets/trainer6a.jpg',
     contactInfo: {
       email: 'taiwan840@gmail.com'
+    },
+    socialMedia: {
+      instagram: 'https://www.instagram.com/biggmiech_/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D',  
     },
     favoriteWorkoutDay: 'Leg day',
     favoriteExercise: 'Squats'
@@ -111,6 +109,9 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     contactInfo: {
       email: 'taiwan840@gmail.com'
     },
+    socialMedia: {
+      instagram: 'https://www.instagram.com/shawneetaylor_tc/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D',  
+    },
     favoriteWorkoutDay: 'Leg day',
     favoriteExercise: 'Squats'
   },
@@ -134,6 +135,9 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     ,
     contactInfo: {
       email: 'taiwan840@gmail.com'
+    },
+    socialMedia: {
+      instagram: 'https://www.instagram.com/gotti.gotit/',  
     },
     favoriteWorkoutDay: 'Leg day',
     favoriteExercise: 'Squats'
