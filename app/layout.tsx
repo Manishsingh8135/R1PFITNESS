@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export const metadata: Metadata = {
-  title: 'R1p Fitness',
-  description: 'Keep Moving',
+  title: 'Best Fitness Gym in Hawaii - Achieve Your Goals with Us',
+  description: 'Join the best fitness gym in Hawaii! Offering top-notch fitness classes, personal training, and the best gym membership deals. Find us in Honolulu for your ultimate fitness experience.',
   icons: {
     icon: '/assets/riplogo1.png'
   }
