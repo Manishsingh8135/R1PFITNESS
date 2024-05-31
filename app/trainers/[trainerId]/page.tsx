@@ -2,6 +2,7 @@
 import { trainers, Trainer } from '../../../data/trainersData';
 import { FaFacebook, FaYoutube, FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 // Define the structure for your params
 interface TrainerPageParams {
   trainerId: string;
@@ -22,18 +23,27 @@ const TrainerPage = ({ params }: { params: TrainerPageParams }) => {
 
   // Render the trainer's details
   return (
-    <div className="container mx-auto my-6 p-4 ">
+    <div className="container mx-auto  p-4 pt-32 ">
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row">
         {/* Trainer Image */}
         <div className="md:w-1/2 px-4">
-          <img src={trainer.image} alt={trainer.name} className="w-full h-auto object-cover rounded-lg border border-yellow-500" />
+          <div className="w-full h-auto object-cover rounded-lg border border-yellow-500">
+            <Image
+              src={trainer.image}
+              alt={trainer.name}
+              layout="responsive"
+              width={500} // Adjust these values as needed
+              height={300} // Adjust these values as needed
+              className="rounded-lg"
+            />
+          </div>
         </div>
 
         {/* Trainer Details */}
         <div className="md:w-1/2 flex flex-col justify-between p-4 ">
           <div>
-            <h1 className="text-6xl font-bold mb-3 ml-4 custom-gradient text-transparent bg-clip-text">{trainer.name}</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-3 ml-4 text-white text-center md:text-start py-6">{trainer.name}</h1>
             {/* Designation Section */}
             <div>
               {trainer.designations && (

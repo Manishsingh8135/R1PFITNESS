@@ -50,8 +50,8 @@ Military Service: His desire to empower others in their fitness quests led him t
 Philosophy: "Transforming you mentally, physically, and emotionally." Hipolito believes fitness is a holistic journey. At R1PFitness, he focuses on providing a fun, engaging, and educational experience to reshape your entire being.
 
 R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic background and military discipline with a passion for teaching. His programs are not just workouts; they are transformative experiences designed to challenge and inspire.`,
-    experience: 25,
-    image: '/assets/hip2.jpg',
+    experience: 13,
+    image: '/assets/trainers/Hip1.jpg',
     contactInfo: {
       email: 'taiwan840@gmail.com'
     },
@@ -76,8 +76,8 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     ],
     specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
     description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
-    experience: 25,
-    image: '/assets/trainer6a.jpg',
+    experience: 8,
+    image: '/assets/trainers/trainerm1.jpg',
     contactInfo: {
       email: 'taiwan840@gmail.com'
     },
@@ -104,8 +104,8 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     ],
     specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
     description: 'Taiwan specializes in strength & conditioning, bodybuilding, and weight loss.',
-    experience: 25,
-    image: '/assets/trainerw4a.jpg',
+    experience: 6,
+    image: '/assets/trainers/trainerw1.jpg',
     contactInfo: {
       email: 'taiwan840@gmail.com'
     },
@@ -130,8 +130,8 @@ R1PFitness: As the heart and soul of R1PFitness, Hipolito blends his athletic ba
     ],
     specialities: ['Strength & Conditioning', 'Bodybuilding', 'Weight Loss'],
     description: 'Jonathan specializes in strength & conditioning, bodybuilding, and weight loss.',
-    experience: 25,
-    image: '/assets/trainer14.JPG'
+    experience: 9,
+    image: '/assets/trainers/trainerm2.JPG'
     ,
     contactInfo: {
       email: 'taiwan840@gmail.com'

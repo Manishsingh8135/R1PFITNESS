@@ -90,7 +90,7 @@ const Footer = () => {
 
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-lg font-bold text-white">
-            © 2023 R1P Fitness™. All Rights Reserved.
+            © 2024 R1P Fitness™. All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a

@@ -1,9 +1,12 @@
 "use client"
 import { motion, useAnimation } from 'framer-motion';
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Volume2, VolumeX } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const controls = useAnimation();
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +26,50 @@ const HeroSection: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [controls]);
 
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    const playVideoWithSound = () => {
+      if (videoElement) {
+        videoElement.muted = isMuted;
+        videoElement.play().catch(error => {
+          console.error("Error playing video with sound: ", error);
+        });
+      }
+    };
+
+    // Play video muted initially
+    if (videoElement) {
+      videoElement.play().catch(error => {
+        console.error("Error playing video: ", error);
+      });
+    }
+
+    // Unmute and play video on user interaction
+    window.addEventListener('click', playVideoWithSound);
+
+    return () => {
+      window.removeEventListener('click', playVideoWithSound);
+    };
+  }, [isMuted]);
+
+  const toggleMute = () => {
+    setIsMuted(prevState => !prevState);
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+    }
+  };
+
   return (
     <div className="relative flex items-center justify-center w-full h-screen overflow-hidden">
-      <video className="absolute w-full h-full object-cover bg-gradient-to-b from-slate-500 via-gray-700 to-black" autoPlay muted loop>
-        <source src="/assets/welcome.mp4" type="video/mp4" />
+      <video 
+        ref={videoRef} 
+        className="absolute w-full h-full object-cover bg-gradient-to-b from-slate-500 via-gray-700 to-black" 
+        autoPlay 
+        loop 
+        muted={isMuted} // Start video muted to comply with autoplay policies
+      >
+        <source src="/assets/videos/welcome.mp4" type="video/mp4" />
       </video>
 
       {/* Gradient Overlay */}
@@ -62,6 +105,12 @@ const HeroSection: React.FC = () => {
           </motion.div>
         </div>
       </div>
+      <button
+        onClick={toggleMute}
+        className="absolute bottom-4 right-4 z-20 p-2 bg-black bg-opacity-50 rounded-full"
+      >
+        {isMuted ? <VolumeX color="white" size={44} /> : <Volume2 color="white" size={44} />}
+      </button>
     </div>
   );
 };
