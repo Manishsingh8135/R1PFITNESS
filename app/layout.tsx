@@ -37,7 +37,10 @@ export default function RootLayout({
             {children}
             <SpeedInsights />
             <Analytics />
+            <div className="mb-16">
             <Footer/>
+            </div>
+           
           </ThemeProvider>
         </body>
       </html>

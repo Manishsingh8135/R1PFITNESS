@@ -17,7 +17,7 @@ export function ThreeDCardDemo() {
                FREE 3-Day Pass!!
             </CardItem>
             <Image
-            src="/assets/ripcardimage.jpg"
+            src="/assets/gym/ripcardimage.jpg"
             height="1000"
             width="1000"
             className="h-80 w-full object-cover rounded-xl group-hover/card:shadow-xl"

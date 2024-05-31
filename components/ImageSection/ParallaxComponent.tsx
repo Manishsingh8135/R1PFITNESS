@@ -13,13 +13,13 @@ export function ParallaxScrollSecondDemo() {
 
 const images = [
  
-  "/assets/riptrainerm.jpg",
-  "/assets/gymopenarea.JPG",
-  "/assets/gymstore.JPG",
-  "/assets/ripgym1.jpg",
-  "/assets/ripgym2.jpg",
-  "/assets/ripgym3.jpg",
-  "/assets/ripgym4.jpg",
+  "/assets/gym/riptrainerm.jpg",
+  "/assets/gym/gymopenarea.JPG",
+  "/assets/gym/gymstore.JPG",
+  "/assets/gym/ripgym1.jpg",
+  "/assets/gym/ripgym2.jpg",
+  "/assets/gym/ripgym3.jpg",
+  "/assets/gym/ripgym4.jpg",
 
 
   
