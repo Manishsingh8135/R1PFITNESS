@@ -13,7 +13,6 @@ const gradientColors = [
   'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500',
   'bg-gradient-to-r from-green-400 to-blue-600',
   'bg-gradient-to-r from-teal-400 via-green-500 to-blue-500',
-  'bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500',
   'bg-gradient-to-r from-blue-500 to-teal-500',
   'bg-gradient-to-r from-gray-700 via-gray-900 to-black',
   'bg-gradient-to-r from-red-500 to-yellow-500',
@@ -44,12 +43,12 @@ const TrainerCard: React.FC<TrainerCardProps> = ({ trainer }) => {
       />
       <div className="absolute bottom-0 w-full p-4">
         <div className='flex justify-center'>
-          <Link href={`/trainers/${trainer.id}`} className="bg-black bg-opacity-50 rounded-full p-2 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-2 text-center text-yellow-600">{trainer.name}</Link>
+          <Link href={`/trainers/${trainer.id}`} className="bg-black bg-opacity-50 rounded-full p-2 text-lg sm:text-xl md:text-2xl  font-bold mb-2 text-center text-yellow-600 px-3">{trainer.name}</Link>
         </div>
 
         <div className="flex flex-wrap gap-2 justify-center">
           {trainer.certifications.map((cert, index) => (
-            <span key={index} className={`${getRandomGradient()} text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-semibold py-1 px-2 rounded-full`}>
+            <span key={index} className={`${getRandomGradient()} text-white text-xs sm:text-sm md:text-base   font-semibold py-1 px-2 rounded-full`}>
               {cert.name}
             </span>
           ))}

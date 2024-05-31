@@ -10,12 +10,11 @@ import OfferingsSection from '@/components/featuresSection/OfferingSection';
 import R1pFitnessComponent from '@/components/textSection/Detail';
 import { ParallaxScrollSecondDemo } from '@/components/ImageSection/ParallaxComponent';
 import { InfiniteMovingCardsDemo } from '@/components/Testimonial/Testimonial';
-import { NavbarDemo } from '@/components/Navbar/NavbarDemo';
 import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect';
 import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
 import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 
-//import GlofoxModal from '@/components/modal/Modal';
+
 
 
 // import CustomSwiper from '@/components/CoverflowSection';
@@ -24,8 +23,6 @@ import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 const Home: React.FC = () => {
   return (
     <div id= 'Home' className="bg-black  min-h-screen text-white overflow-x-hidden">
-
-      {/* <NavbarDemo/> */}
 
       <HeroSection />
       <ThreeDCardDemo/>
