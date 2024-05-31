@@ -11,17 +11,17 @@ interface SectionData {
 }
 const sectionsData = [
   {
-    img: '/assets/riptrainerm.jpg',
+    img: '/assets/gym/riptrainerm.jpg',
     heading: 'Personal Training',
     text: 'Our certified trainers provide one-on-one guidance tailored to your goals.',
   },
   {
-    img: '/assets/ripgym2.jpg',
+    img: '/assets/gym/ripgym2.jpg',
     heading: 'Group Fitness Classes',
     text: 'Join our dynamic group classes led by experienced instructors for an energizing workout.',
   },
   {
-    img: '/assets/ripgym1.jpg',
+    img: '/assets/gym/ripgym1.jpg',
     heading: 'Holistic Health Programs',
     text: 'Explore holistic health programs that integrate physical, mental, and spiritual well-being.',
   },
