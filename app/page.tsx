@@ -13,6 +13,7 @@ import { InfiniteMovingCardsDemo } from '@/components/Testimonial/Testimonial';
 import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect';
 import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
 import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
+import MainTable from '@/components/table/MainTable';
 
 
 
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
       {/* <div className='mt-48'>
       <ParallaxScrollSecondDemo/>
       </div>          */}
+      <MainTable/>
       <OfferingsSection/>
       <FaqSection />
       <TypewriterEffectDemo/>
