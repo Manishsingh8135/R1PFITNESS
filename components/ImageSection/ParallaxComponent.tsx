@@ -1,5 +1,5 @@
 "use client";
-import { ParallaxScrollSecond } from "../ui/parallax-scroll";
+import { ParallaxScrollSecond } from "../CustomUi/parallax-scroll";
 
 export function ParallaxScrollSecondDemo() {
   return (

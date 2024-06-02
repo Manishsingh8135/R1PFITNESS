@@ -1,6 +1,6 @@
 import { ParallaxScrollSecondDemo } from "@/components/ImageSection/ParallaxComponent";
 import { InfiniteMovingCardsDemo } from "@/components/Testimonial/Testimonial";
-import { ParallaxScrollSecond } from "@/components/ui/parallax-scroll";
+import { ParallaxScrollSecond } from "@/components/CustomUi/parallax-scroll";
 
 export default function NewGallery(){
     return(
