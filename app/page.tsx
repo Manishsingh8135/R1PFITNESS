@@ -14,6 +14,8 @@ import { TypewriterEffectDemo } from '@/components/textSection/TypeWriterEffect'
 import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
 import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 import MainTable from '@/components/table/MainTable';
+import { LayoutGridDemo } from '@/components/ImageLayout/LayoutImageGrid';
+import ImageLayoutMain from '@/components/ImageLayout/ImageLayoutMain';
 
 
 
@@ -31,13 +33,19 @@ const Home: React.FC = () => {
       <MainComponent />
 
       <NewPriceSection />
-
+      
+     
       <TrainersPage />  
       {/* <div className='mt-48'>
       <ParallaxScrollSecondDemo/>
       </div>          */}
       <MainTable/>
+      <ImageLayoutMain/>
+      <div className='mt-12'>
       <OfferingsSection/>
+      </div>
+
+     
       <FaqSection />
       <TypewriterEffectDemo/>
 
