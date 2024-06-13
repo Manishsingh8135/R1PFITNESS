@@ -15,6 +15,7 @@ import { AnimatedPinDemo } from '@/components/card/3d-pin-card';
 import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 import MainTable from '@/components/table/MainTable';
 
+import ImageLayoutMain from '@/components/ImageLayout/ImageLayoutMain';
 
 
 
@@ -23,23 +24,27 @@ import MainTable from '@/components/table/MainTable';
 
 const Home: React.FC = () => {
   return (
-    <div id= 'Home' className="bg-black  min-h-screen text-white overflow-x-hidden">
+    <div id='Home' className="bg-black  min-h-screen text-white overflow-x-hidden">
 
       <HeroSection />
-      <ThreeDCardDemo/>
-      <R1pFitnessComponent/>
+      <ThreeDCardDemo />
+      <R1pFitnessComponent />
       <MainComponent />
 
       <NewPriceSection />
 
-      <TrainersPage />  
-      {/* <div className='mt-48'>
-      <ParallaxScrollSecondDemo/>
-      </div>          */}
-      <MainTable/>
-      <OfferingsSection/>
+
+      <TrainersPage />
+      <MainTable />
+      <ImageLayoutMain />
+      
+      <div className='mt-12'>
+        <OfferingsSection />
+      </div>
+
+
       <FaqSection />
-      <TypewriterEffectDemo/>
+      <TypewriterEffectDemo />
 
     </div>
   );
