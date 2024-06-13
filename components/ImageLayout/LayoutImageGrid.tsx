@@ -13,12 +13,12 @@ export function LayoutGridDemo() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House in the woods</p>
+      {/* <p className="font-bold text-4xl text-white">House in the woods</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         A serene and tranquil retreat, this house in the woods offers a peaceful
         escape from the hustle and bustle of city life.
-      </p>
+      </p> */}
     </div>
   );
 };
@@ -68,62 +68,70 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail:"/assets/merchs/merchgw.jpg"
-},
+    thumbnail: "/assets/merchs/merchgw.jpg",
+    tags: ["Trending", "New"]
+  },
   {
     id: 2,
-    content: <SkeletonTwo />,
+    content: <SkeletonOne />,
     className: "col-span-1",
-    thumbnail:"/assets/merchs/merchw.jpg"
- },
+    thumbnail: "/assets/merchs/merchw.jpg",
+    tags: ["Sale"]
+  },
   {
     id: 3,
-    content: <SkeletonThree />,
+    content: <SkeletonOne />,
     className: "col-span-1",
-    thumbnail:"/assets/merchs/merchm2.jpg",
-   
+    thumbnail: "/assets/merchs/merchm2.jpg",
+    tags: ["New"]
   },
   {
     id: 4,
-    content: <SkeletonFour />,
+    content: <SkeletonOne />,
     className: "col-span-1",
-    thumbnail:"/assets/merchs/merchnaruto.jpg"
-    
- },
- {
-  id: 5,
-  content: <SkeletonFour />,
-  className: "col-span-1",
-  thumbnail:"/assets/merchs/merchm4.jpg"
-},
+    thumbnail: "/assets/merchs/merchnaruto.jpg",
+    tags: ["Trending"]
+  },
+  {
+    id: 5,
+    content: <SkeletonOne />,
+    className: "col-span-1",
+    thumbnail: "/assets/merchs/merchm.jpg",
+    tags: ["Trending"]
+  },
   {
     id: 6,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail:"/assets/merchs/merchgw2.jpg"
- },
+    thumbnail: "/assets/merchs/merchw2.jpg",
+    tags: ["Sale", "Trending"]
+  },
   {
     id: 7,
-    content: <SkeletonTwo />,
+    content: <SkeletonOne />,
     className: "col-span-1",
-    thumbnail:"/assets/merchs/merchw3.jpg"
-},
+    thumbnail: "/assets/merchs/merchw3.jpg",
+    tags: []
+  },
   {
     id: 8,
-    content: <SkeletonThree />,
+    content: <SkeletonOne />,
     className: "col-span-1",
-    thumbnail:"/assets/merchs/merchm4.jpg"
-},
+    thumbnail: "/assets/merchs/merchgrayw.jpg",
+    tags: ["New"]
+  },
   {
     id: 9,
-    content: <SkeletonFour />,
+    content: <SkeletonOne />,
     className: "col-span-1",
-    thumbnail:"/assets/merchs/merchtwow.jpg"
-},
-{
-  id: 10,
-  content: <SkeletonFour />,
-  className: "col-span-1",
-  thumbnail:"/assets/merchs/merchm.jpg"
-},
+    thumbnail: "/assets/merchs/merchm4.jpg",
+    tags: ["Sale"]
+  },
+  {
+    id: 10,
+    content: <SkeletonOne />,
+    className: "col-span-1",
+    thumbnail: "/assets/merchs/merchtwow.jpg",
+    tags: ["Sale"]
+  },
 ];
