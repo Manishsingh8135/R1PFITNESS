@@ -1,159 +1,131 @@
-// Import the trainers data and interfaces from trainersData.tsx
 import { trainers, Trainer } from '../../../data/trainersData';
 import { FaFacebook, FaYoutube, FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from 'next/image';
-// Define the structure for your params
+
 interface TrainerPageParams {
   trainerId: string;
 }
 
-// TrainerPage component
 const TrainerPage = ({ params }: { params: TrainerPageParams }) => {
   const { trainerId } = params;
-
-  // Find the trainer by ID
   const trainer = trainers.find((t: Trainer) => t.id === trainerId);
 
-
-  // If no trainer is found, display a not found message
   if (!trainer) {
-    return <div>Trainer not found</div>;
+    return <div className="text-center text-2xl mt-20">Trainer not found</div>;
   }
 
-  // Render the trainer's details
   return (
-    <div className="container mx-auto  p-4 pt-32 ">
-      {/* Hero Section */}
+    <div className="container mx-auto p-4 pt-32">
       <div className="flex flex-col md:flex-row">
-        {/* Trainer Image */}
-        <div className="md:w-1/2 px-4">
-          <div className="w-full h-auto object-cover rounded-lg border border-yellow-500">
-            <Image
-              src={trainer.image}
-              alt={trainer.name}
-              layout="responsive"
-              width={500} // Adjust these values as needed
-              height={300} // Adjust these values as needed
-              className="rounded-lg"
-            />
-          </div>
-        </div>
-
-        {/* Trainer Details */}
-        <div className="md:w-1/2 flex flex-col justify-between p-4 ">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-3 ml-4 text-white text-center md:text-start py-6">{trainer.name}</h1>
-            {/* Designation Section */}
-            <div>
-              {trainer.designations && (
-                <div className="rounded-lg  p-4 my-4">
-                  <div className="flex flex-row justify-start items-center gap-4">
-                    {trainer.designations.map((desig, index) => (
-                      <span key={index} className="py-3 px-4 rounded-full border border-custom-gradient">
-                        {desig}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-          </div>
-          <div className='border border-yellow-500 rounded-lg p-6  text-white   border-b border-custom-gradient '>
-            <p className="font-bold text-2xl  py-3">Experience: {trainer.experience} years</p>
-
-
-            {/* Specialities */}
-            <div className=' py-3'>
-              <h2 className="font-bold my-4 text-2xl mt-6">Specialities:</h2>
-              <div className='flex flex-wrap gap-2'>
-                {trainer.specialities.map((spec, index) => (
-                  <div key={index} className='inline-flex items-center p-2 rounded-full border border-white'>
-                    {spec}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-
-            {/* <p className="font-bold">Specialities: {trainer.specialities.join(', ')}</p> */}
-
-            {/* Certifications */}
-            <div>
-              <h2 className="font-bold my-4 text-2xl mt-6">Certifications:</h2>
-              <div className='flex flex-wrap gap-2'>
-                {trainer.certifications.map((cert, index) => (
-                  <div key={index} className='inline-flex items-center p-2 rounded-full border border-white'>
-                    {cert.name}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-
-            {/* Social Media Links */}
-            <div className="flex mt-3">
-
-              {trainer.socialMedia?.instagram && (
-                <a href={`https://instagram.com/${trainer.socialMedia.instagram}`} target="_blank" rel="noopener noreferrer" className="mr-2">
-                  {/* Instagram Icon */}
-
-                </a>
-              )}
-              {/* Other social media icons */}
-            </div>
-          </div>
-
-
-          {/* thrird section */}
-          <div className="flex flex-row items-center justify-start gap-4 p-2">
-            {trainer.socialMedia?.facebook && (
-              <Link href={trainer.socialMedia.facebook} passHref>
-                <span className="cursor-pointer hover:text-blue-600 ">
-                  <FaFacebook size={30} />
-                </span>
-              </Link>
-            )}
-            {trainer.socialMedia?.youtube && (
-              <Link href={trainer.socialMedia.youtube} passHref>
-                <span className="cursor-pointer hover:text-red-600">
-                  <FaYoutube size={30} />
-                </span>
-              </Link>
-            )}
-            {trainer.socialMedia?.instagram && (
-              <Link href={trainer.socialMedia.instagram} passHref>
-                <span className="cursor-pointer hover:text-pink-600">
-                  <FaInstagram size={30} />
-                </span>
-              </Link>
-            )}
-            {trainer.socialMedia?.tiktok && (
-              <Link href={trainer.socialMedia.tiktok} passHref>
-                <span className="cursor-pointer hover:text-black">
-                  <FaTiktok size={30} />
-                </span>
-              </Link>
-            )}
-            {trainer.socialMedia?.linkedin && (
-              <Link href={trainer.socialMedia.linkedin} passHref>
-                <span className="cursor-pointer hover:text-blue-700">
-                  <FaLinkedin size={30} />
-                </span>
-              </Link>
-            )}
-          </div>
-        </div>
+        <TrainerImage image={trainer.image} name={trainer.name} />
+        <TrainerDetails trainer={trainer} />
       </div>
-
-      {/* Description Section */}
-      <div className="mt-12 p-4 md:mt-6 md:px-48 text-center ">
-        <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text custom-gradient">About {trainer.name}</h2>
-        <p className='2xl'>{trainer.description}</p>
-      </div>
+      <TrainerDescription name={trainer.name} description={trainer.description} />
     </div>
   );
 };
+
+const TrainerImage = ({ image, name }: { image: string; name: string }) => (
+  <div className="md:w-1/2 px-4">
+    <div className="w-full h-auto object-cover rounded-lg border border-yellow-500">
+      <Image
+        src={image}
+        alt={name}
+        layout="responsive"
+        width={500}
+        height={300}
+        className="rounded-lg"
+      />
+    </div>
+  </div>
+);
+
+const TrainerDetails = ({ trainer }: { trainer: Trainer }) => (
+  <div className="md:w-1/2 flex flex-col justify-between p-4">
+    <div>
+      <h1 className="text-4xl md:text-6xl font-bold mb-3 ml-4 text-white text-center md:text-start py-6">{trainer.name}</h1>
+      <Designations designations={trainer.designations} />
+    </div>
+    <TrainerInfo trainer={trainer} />
+    <SocialMediaLinks socialMedia={trainer.socialMedia} />
+  </div>
+);
+
+const Designations = ({ designations }: { designations?: string[] }) => (
+  designations && (
+    <div className="rounded-lg p-4 my-4">
+      <div className="flex flex-wrap justify-start items-center gap-4">
+        {designations.map((desig, index) => (
+          <span key={index} className="py-3 px-4 rounded-full border border-custom-gradient">
+            {desig}
+          </span>
+        ))}
+      </div>
+    </div>
+  )
+);
+
+const TrainerInfo = ({ trainer }: { trainer: Trainer }) => (
+  <div className="border border-yellow-500 rounded-lg p-6 text-white">
+    <p className="font-bold text-2xl py-3">Experience: {trainer.experience} years</p>
+    <InfoSection title="Specialities" items={trainer.specialities} />
+    <InfoSection title="Certifications" items={trainer.certifications.map(cert => cert.name)} />
+  </div>
+);
+
+const InfoSection = ({ title, items }: { title: string; items: string[] }) => (
+  <div className="py-3">
+    <h2 className="font-bold my-4 text-2xl mt-6">{title}:</h2>
+    <div className="flex flex-wrap gap-2">
+      {items.map((item, index) => (
+        <div key={index} className="inline-flex items-center p-2 rounded-full border border-white">
+          {item}
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const SocialMediaLinks = ({ socialMedia }: { socialMedia?: Record<string, string> }) => (
+  <div className="flex flex-row items-center justify-start gap-4 p-2 mt-4">
+    {socialMedia && Object.entries(socialMedia).map(([platform, url]) => (
+      <SocialIcon key={platform} platform={platform} url={url} />
+    ))}
+  </div>
+);
+
+const SocialIcon = ({ platform, url }: { platform: string; url: string }) => {
+  const icons = {
+    facebook: FaFacebook,
+    youtube: FaYoutube,
+    instagram: FaInstagram,
+    tiktok: FaTiktok,
+    linkedin: FaLinkedin
+  };
+  const Icon = icons[platform as keyof typeof icons];
+  return (
+    <Link href={url} passHref>
+      <span className={`cursor-pointer hover:text-${platform}-600`}>
+        <Icon size={30} />
+      </span>
+    </Link>
+  );
+};
+
+const TrainerDescription = ({ name, description }: { name: string; description: string }) => (
+  <div className="mt-12 p-8 md:mt-16 md:px-16 text-center">
+    <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
+      About {name}
+    </h2>
+    <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-3xl p-1">
+      <div className="bg-black rounded-3xl p-6">
+        <p className="text-xl md:text-2xl font-serif italic text-yellow-100 leading-relaxed">
+          {description}
+        </p>
+      </div>
+    </div>
+  </div>
+);
 
 export default TrainerPage;

@@ -2,17 +2,19 @@
 
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "../CustomUi/infinite-moving-card";
+import { ParallaxScrollDemoFour } from "../Testimonial/Testiminial3";
 
 export function InfiniteMovingCardsDemo() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <div className="relative">
         <div className="absolute bg-amber-600 insert-0 blur-lg w-full border-3 border-maincolor"></div>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+        <ParallaxScrollDemoFour/>
       </div>
     </div>
   );
@@ -51,4 +53,3 @@ const testimonials = [
   },
 ];
 
-  

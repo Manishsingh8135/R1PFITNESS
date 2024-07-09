@@ -16,6 +16,9 @@ import { ThreeDCardDemo } from '@/components/card/3d-card-demo';
 import MainTable from '@/components/table/MainTable';
 
 import ImageLayoutMain from '@/components/ImageLayout/ImageLayoutMain';
+import HeroSection2 from '@/components/hero/Hero2';
+import {EventsSection} from '@/components/events/Events';
+import { EventsSection2 } from '@/components/events/EventSection';
 
 
 
@@ -27,10 +30,11 @@ const Home: React.FC = () => {
     <div id='Home' className="bg-black  min-h-screen text-white overflow-x-hidden">
 
       <HeroSection />
+      <HeroSection2/>
       <ThreeDCardDemo />
       <R1pFitnessComponent />
       <MainComponent />
-
+      <EventsSection2/>
       <NewPriceSection />
 
 

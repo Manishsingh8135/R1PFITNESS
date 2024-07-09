@@ -1,28 +1,19 @@
-export const calculateBMI = (height: number, weight: number): number => {
-    if (height <= 0 || weight <= 0) {
-      throw new Error("Invalid height or weight");
-    }
-  
-    // Assuming height is in centimeters and weight is in kilograms
-    // Convert height from cm to meters
-    const heightInMeters = height / 100;
-    
-    // Calculate BMI
-    const bmi = weight / (heightInMeters * heightInMeters);
-  
-    return bmi;
-  };
-  
-  export const getMessage = (bmi: number): string => {
-    // Determine message based on BMI
-    const messages = {
-      low: ["Message for low BMI", "..."],
-      normal: ["Message for normal BMI", "..."],
-      high: ["Message for high BMI", "..."],
-    };
-  
-    if (bmi < 18.5) return messages.low[Math.floor(Math.random() * messages.low.length)];
-    if (bmi >= 18.5 && bmi <= 24.9) return messages.normal[Math.floor(Math.random() * messages.normal.length)];
-    return messages.high[Math.floor(Math.random() * messages.high.length)];
-  };
-  
+import { BMICategory, Celebrity } from '@/types/index';
+import { celebrities } from '@/data/celebrity';
+
+export const calculateBMI = (weight: number, height: number): number => {
+  return Number((weight / ((height / 100) ** 2)).toFixed(1));
+};
+
+export const getBMICategory = (bmi: number): BMICategory => {
+  if (bmi < 18.5) return 'Underweight';
+  if (bmi < 25) return 'Normal weight';
+  if (bmi < 30) return 'Overweight';
+  return 'Obese';
+};
+
+export const getCelebrityMatches = (bmi: number, limit: number = 5): Celebrity[] => {
+  return celebrities
+    .sort((a, b) => Math.abs(a.bmi - bmi) - Math.abs(b.bmi - bmi))
+    .slice(0, limit);
+};
