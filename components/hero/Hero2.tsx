@@ -1,30 +1,10 @@
 "use client"
-import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
 import { Volume2, VolumeX, Crown, Dumbbell, Users, Calendar } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
-  const controls = useAnimation();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isMuted, setIsMuted] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const maxScroll = window.innerHeight;
-
-      const opacityValue = 1 - scrollY / maxScroll;
-      const yValue = -scrollY;
-
-      controls.start({
-        opacity: opacityValue,
-        y: yValue
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [controls]);
 
   useEffect(() => {
     const videoElement = videoRef.current;
@@ -75,20 +55,12 @@ const HeroSection: React.FC = () => {
       <div className="absolute w-full h-full bg-gradient-to-t from-black to-transparent"></div>
       
       <div className='flex flex-col items-center z-10'>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-8"
-        >
+        <div className="mb-8">
           <Crown className="w-24 h-24 mx-auto" style={{ stroke: 'url(#goldGradient)' }} />
-        </motion.div>
+        </div>
 
-        <motion.h1
+        <h1
           className="text-7xl font-extrabold mb-4 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
           style={{
             backgroundImage: goldGradient,
             WebkitBackgroundClip: 'text',
@@ -97,13 +69,10 @@ const HeroSection: React.FC = () => {
           }}
         >
           R1P FITNESS GYM
-        </motion.h1>
+        </h1>
 
-        <motion.p
+        <p
           className="text-4xl font-bold mb-8 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
           style={{
             backgroundImage: goldGradient,
             WebkitBackgroundClip: 'text',
@@ -112,33 +81,23 @@ const HeroSection: React.FC = () => {
           }}
         >
           Reborn 1n Paradise
-        </motion.p>
+        </p>
 
-        <motion.div
-          className="flex space-x-4 mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
+        <div className="flex space-x-4 mb-12">
           <FeatureButton icon={<Dumbbell size={24} />} text="Elite Training" />
           <FeatureButton icon={<Users size={24} />} text="Community" />
           <FeatureButton icon={<Calendar size={24} />} text="Events" />
-        </motion.div>
+        </div>
 
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+        <button
           className="px-10 py-4 rounded-full font-bold text-xl transition duration-300 filter drop-shadow-md"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
           style={{
             background: goldGradient,
-            color: '#000',  // Dark text for contrast
+            color: '#000',
           }}
         >
           Join Our Royal Family
-        </motion.button>
+        </button>
       </div>
 
       <button
@@ -162,17 +121,14 @@ const HeroSection: React.FC = () => {
 };
 
 const FeatureButton: React.FC<{ icon: React.ReactNode; text: string }> = ({ icon, text }) => (
-  <motion.div
-    whileHover={{ scale: 1.05 }}
-    className="flex flex-col items-center bg-yellow-900/40 rounded-lg p-3 backdrop-blur-sm"
-  >
+  <div className="flex flex-col items-center bg-yellow-900/40 rounded-lg p-3 backdrop-blur-sm">
     <div className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
       {React.cloneElement(icon as React.ReactElement, { style: { stroke: 'url(#goldGradient)' } })}
     </div>
     <span className="mt-2 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
       {text}
     </span>
-  </motion.div>
+  </div>
 );
 
 export default HeroSection;

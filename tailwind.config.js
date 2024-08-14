@@ -23,7 +23,6 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'b-gradient': 
           "linear-gradient(80deg, rgba(45,35,9,1) 0%, rgba(221,184,43,1) 41%, rgba(128,101,7,1) 100%)",
-    
       },
       customGradientText: {
         'background-image': 'var(--gradient-radial)',
@@ -36,9 +35,6 @@ module.exports = {
         golden: '#FFD700',
         yellow: '#FFEA00',
         bronze: '#CD7F32',
-        primary: '#007bff', // Replace with your primary color
-        secondary: '#6c757d', // Replace with your secondary color
-        highlight: '#f59e0b',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
