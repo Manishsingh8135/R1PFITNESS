@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Feature } from '@/types/index';
-
 interface SideMenuProps {
   features: Feature[];
   activeFeature: string;
@@ -11,26 +10,32 @@ interface SideMenuProps {
 export const SideMenu: React.FC<SideMenuProps> = ({ features, activeFeature, setActiveFeature }) => {
   return (
     <motion.div 
-      className="w-64 bg-maincolor-dark bg-opacity-50 p-6 rounded-lg"
+      className="w-72 bg-gradient-to-br from-gray-900 to-black p-6 rounded-xl shadow-lg"
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <h2 className="text-2xl font-bold mb-4">Features</h2>
-      <ul>
+      <h2 className="text-3xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
+        Features
+      </h2>
+      <ul className="space-y-3">
         {features.map((feature) => (
-          <li key={feature.id} className="mb-2">
+          <motion.li 
+            key={feature.id}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             <button
               onClick={() => setActiveFeature(feature.id)}
-              className={`w-full text-left p-2 rounded transition-colors ${
+              className={`w-full text-left py-3 px-4 rounded-lg transition-all duration-300 font-medium ${
                 activeFeature === feature.id
-                  ? 'bg-maincolor text-black'
-                  : 'hover:bg-maincolor-medium'
+                  ? 'bg-amber-400 text-gray-900 shadow-md'
+                  : 'text-amber-400 hover:bg-gray-800 hover:text-amber-300'
               }`}
             >
               {feature.name}
             </button>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </motion.div>

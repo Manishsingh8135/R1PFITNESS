@@ -1,9 +1,9 @@
-import { R1PFitnessCalculator } from "@/components/bmi/main/BMI";
+import { FitnessCalculator } from "@/components/bmi/fitness-calculator/FitnessCalculator"
 
 export default function BMI (){
     return(
         <div>
-            <R1PFitnessCalculator/>
+            <FitnessCalculator />
         </div>
     )
 }
